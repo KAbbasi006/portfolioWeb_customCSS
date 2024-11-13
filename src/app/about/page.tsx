@@ -19,9 +19,7 @@ const AboutSection = () => {
           </p>
           
           {/* Download CV Button */}
-          <a href="/Resume.png" target="_blank " className="resume-btn">
-           View Resume
-          </a>
+          
         </div>
       </div>
      

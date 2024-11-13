@@ -84,6 +84,14 @@ nav a{
   .mobile-nav a{
     color: white;
   }
+  .header{
+  padding: 10px 20px;
+
+  }
+  .logo{
+  font-size: 20px;
+
+  }
 }
 
 
@@ -121,10 +129,20 @@ nav a{
   margin: 5px 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
 }
 .footer-credit{
   color: gray;
+}
+@media(max-width:768px){
+  .footer-nav{
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 20px;
+  }
+  .contact-info{
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -224,6 +242,43 @@ nav a{
     justify-content: center;
   align-items: center;
   }
+  .intro {
+    text-align: left;
+    margin: 0 auto;
+  }
+  .intro h1{
+    font-size: 1.5rem;
+  }
+  .intro h2{
+    font-size: 2rem;
+  }
+  .hero-right{
+  margin: 50 auto;
+  }
+  .profile-img img{
+    width: 100%;
+ height: 100%;
+ border-radius: 50%;
+ background-color: rgb(24, 24, 31);
+  }
+  .resume-btn{
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px !important;
+  }
+  .social-media{
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .social-media a{
+    border: 2px solid white;
+   text-align: center;
+   border-radius: 30px;  
+   padding: 4% 5%;
+ }
+  .intro h1, .intro h2{
+    text-align: left;
+  }
 }
 
 
@@ -233,7 +288,7 @@ nav a{
 .skills-container{
   background-color: black;
   color: white;
-  padding: 4rem 4rem;
+  padding: 3rem ;
 }
 .skills-title{
   text-align: center;
@@ -251,16 +306,21 @@ nav a{
     display: grid;
     grid-template-columns: repeat(3,1fr); /* 3 col by default */
     gap: 2rem;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 @media(max-width:1024px){
   .skills-grid{
    grid-template-columns: repeat(2,1fr);  /* 2 col on med screen */
+   
   }
 }
 @media(max-width:768px){
   .skills-grid{
-    grid-template-columns: repeat(1,1fr);       /* 1 col on small screen */
+    grid-template-columns: repeat(1,1fr); 
+    margin: 0 auto !important;      /* 1 col on small screen */
+  }
+  .skills-description{
+    padding: 0 0.2rem;
   }
 }
 .skill-card{
@@ -354,16 +414,19 @@ nav a{
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  
   @media(min-width:768px){
     .portfolio-grid{
       grid-template-columns: 1fr 1fr;
     }
+    
   }
   @media(min-width:1024px) {
     .portfolio-grid{
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
+  
 .portfolio-card{
   background-color: #1f2937;
   border: 1px solid #4b5563;
@@ -388,9 +451,9 @@ nav a{
 }
 
 .portfolio-category{
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #ffae00;
-  padding: 4px;
+  padding: 2px;
   margin-bottom: 12px;
 }
 .portfolio-category span{
@@ -477,29 +540,32 @@ nav a{
   padding: 4rem 1rem;
 }
 .containers{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: grid;
+  display: flex;
+  /* flex-direct  ion: row; */
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
-  grid-template-columns: 1fr;
+  margin: 0 auto;
+
 }
-@media(min-width:1024px){
+@media(max-width:768px){
   .containers{
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .image-wrapper img{
+      width: 300px;
+      height: 300px;
+        border-radius: 150px;
+
   }
 }
 .image-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.image-wrapper{
-  background-color: rgb(24, 24, 31);
+
   border-radius: 50%;
-  padding: 1rem;
+  background-color: rgb(24, 24, 31);
+
 }
+
 .content{
   color: white;
   padding: 0 1rem;

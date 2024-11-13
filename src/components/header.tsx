@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState } from "react";
 import React from 'react'
 import { IoMenu } from "react-icons/io5";
@@ -15,11 +16,11 @@ function Header() {
         <div className="logo">Komal Abbasi</div>
         <nav className={`nav ${isOpen ? "open" : ""}`} >
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/skills">Skills</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact me</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/skills">Skills</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+            <li><Link href="/contact">Contact me</Link></li>
           </ul>
         </nav>
         <button className="hire-btn">Hire me</button>
@@ -28,11 +29,11 @@ function Header() {
       {isOpen && (
         <nav className="mobile-nav">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/skills">Skills</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact me</a></li>
+          <li><Link href="/">Home</Link></li>
+            <li><Link href="/skills">Skills</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+            <li><Link href="/contact">Contact me</Link></li>
           </ul>
         </nav>
       )}

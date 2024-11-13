@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub,FaGlobe, FaBehance } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -7,11 +8,11 @@ const Footer = () => {
         <h2 className="footer-logo">Komal Abbasi</h2>
         
         <ul className="footer-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/about">About me</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/contact">Contact me</a></li>
+        <li><Link href="/">Home</Link></li>
+            <li><Link href="/skills">Skills</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+            <li><Link href="/contact">Contact me</Link></li>
         </ul>
         
         <div className="social-icons">
